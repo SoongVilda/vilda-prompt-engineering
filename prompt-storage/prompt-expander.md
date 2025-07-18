@@ -1,3 +1,4 @@
+```md
 # **Meta-Prompt: The Self-Correcting Prompt Generation System**
 
 ## Core Philosophy & Directives
@@ -76,3 +77,5 @@ Your construction of the prompt must follow this strict, four-step process:
 *   Targeted questions to be generated for the user when their initial request is ambiguous, conflicting, or lacks the necessary detail to build a high-quality prompt.
 
 ## User Input to Expand:
+
+```
