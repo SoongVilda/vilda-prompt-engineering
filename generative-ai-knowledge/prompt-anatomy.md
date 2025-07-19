@@ -1,6 +1,6 @@
 # The Art of Prompting: A Comprehensive Guide
 
-```
+```md
 # The Lean & Effective Prompt
 
 ## Role
@@ -21,28 +21,57 @@ For context:
 
 ## Explanation
 
-### Role
-
-This section defines the **function or expert profile** the AI should adopt. It's a high-impact, low-effort way to control the tone, vocabulary, and perspective of the response. A well-defined role (e.g., _Senior Software Engineer_, _Cynical Marketing Expert_, _Helpful Librarian_) tells the AI _who_ it should be for the task.
-
-### Goal
-
-This section is where you define the **primary objective** of your prompt. What do you want the AI to accomplish? Be as precise as possible. A well-defined goal ensures the AI understands its mission, whether it's summarizing a document, generating creative text, answering a specific question, or performing a complex task. Think about the **desired outcome** and articulate it clearly.
-
-### Example
-
-Here you provide a **concrete, imitable sample** of the desired output. For any structured response, showing is more effective than telling. This removes ambiguity and is often faster and more precise than writing a complex description in the `Return Format` section.
-
-### Return Format
-
-Here, you specify the **exact structure and style** you expect for the AI's output, especially if an example isn't provided or if you need to add further constraints. Do you need a bulleted list, a JSON object, or a specific tone? Clearly outlining the return format helps the AI deliver a response that integrates seamlessly into your workflow.
-
-### Warnings
-
-Use this space to outline any **constraints, limitations, or actions the AI should avoid**. This acts as a set of guardrails for the AI. For instance, you might instruct it not to exceed a certain word count, avoid sensitive topics, or refrain from using jargon. Warnings help to prevent undesirable outputs and ensure the AI's response adheres to specific guidelines.
+This minimalistic template is powerful because it systematically combines several key prompt engineering techniques in a logical flow. This guide explains each component, the academic technique it leverages, and the source paper that validates its effectiveness.
 
 ---
+### Role
+* **Technique:** **Role Prompting**
+* This section leverages Role Prompting to define the function or expert profile the AI should adopt. It's a high-impact, low-effort way to control the tone, vocabulary, and perspective of the response. A well-defined role (e.g., *Senior Software Engineer*, *Cynical Marketing Expert*, *Helpful Librarian*) tells the AI *who* it should be for the task.
 
+> **Source:** "A Survey of Large Language Models" by Wayne Xin Zhao et al. (2023)
+> **Link:** [View Paper](https://arxiv.org/abs/2303.18223)
+> **Relevance:** This academic survey places "role-play" prompting within the broader context of adapting LLMs for specific scenarios, confirming its effectiveness as a recognized method.
+
+---
+### Goal
+* **Technique:** **Clear Instruction**
+* This section defines the primary objective of your prompt. This is the foundation of all effective prompting, ensuring the model's powerful capabilities are aimed squarely at your intended target. A well-defined goal ensures the AI understands its mission and prevents it from making incorrect assumptions.
+
+> **Source:** "Finetuned Language Models Are Zero-Shot Learners (FLAN)" by Jason Wei et al. (2021)
+> **Link:** [View Paper](https://arxiv.org/abs/2109.01652)
+> **Relevance:** This paper proves that training models on a wide variety of clear instructions makes them dramatically better at new tasks, establishing the foundational importance of explicit goals.
+
+---
+### Example
+* **Technique:** **Few-Shot Prompting** (or One-Shot, for a single example)
+* This powerful technique involves showing, not just telling. By providing a concrete, imitable sample of the desired output, you allow the model to learn the required format and style by inference. For any structured data, this is often faster and more precise than describing it abstractly.
+
+> **Source:** "Language Models are Few-Shot Learners" by Tom B. Brown et al. (2020)
+> **Link:** [View Paper](https://arxiv.org/abs/2005.14165)
+> **Relevance:** This is the seminal GPT-3 paper that introduced "in-context learning," showing that models can learn to perform a task from just a few examples in the prompt without any retraining.
+
+---
+### Return Format
+* **Technique:** **Output Formatting**
+* This section gives you explicit control over the output's final structure, which is critical for making it predictable and usable. Use this when an example isn't provided or to add further constraints. It ensures the response integrates seamlessly into your workflow.
+
+> **Source:** This is a direct application of the principles in "Finetuned Language Models Are Zero-Shot Learners (FLAN)".
+> **Relevance:** The ability of a model to adhere to a specific format is a measure of its instruction-following capability. The FLAN paper demonstrates how models are trained to become better at following all kinds of instructions, including complex formatting rules.
+
+---
+### Warnings
+* **Technique:** **Constraint Prompting**
+* This technique acts as a guardrail. By outlining limitations or actions the AI must avoid (e.g., "do not exceed 300 words," "avoid technical jargon"), you refine the output and prevent undesirable results, ensuring the response adheres to your specific guidelines.
+
+> **Source:** "Constitutional AI: Harmlessness from AI Feedback" by Yuntao Bai et al. (2022)
+> **Link:** [View Paper](https://arxiv.org/abs/2212.08073)
+> **Relevance:** This paper pioneers the use of explicit principles and constraints (a "constitution") to guide AI behavior, demonstrating the power of telling a model what *not* to do.
+
+---
 ### Context Dump
+* **Technique:** **Contextual Prompting** (The foundation for **Retrieval-Augmented Generation - RAG**)
+* This is where you provide all necessary background information. This "grounds" the model in the specific data you provide, forcing it to generate answers based on that context rather than its general pre-trained knowledge. This drastically improves factual accuracy and is a cornerstone of advanced, reliable AI systems.
 
-This is where you provide **all the necessary background information, data, or source material** the AI needs to perform its task. Think of it as the knowledge base for the AI's response. This can include raw text, code snippets, lists of facts, previous conversations, or any other relevant data. The more comprehensive and relevant your context, the better the AI can understand the nuances of your request and generate an accurate, helpful response.
+> **Source:** "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (RAG)" by Patrick Lewis et al. (2020)
+> **Link:** [View Paper](https://arxiv.org/abs/2005.11401)
+> **Relevance:** This is the foundational paper that introduced the RAG framework, proving that grounding a model's generation with retrieved, factual context drastically improves accuracy and reliability.
