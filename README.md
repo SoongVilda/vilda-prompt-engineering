@@ -10,6 +10,7 @@ This repository is organized to help you quickly find resources related to Large
 
 * **[Generative AI Knowledge](generative-ai-knowledge/README.md)**: Dive into core concepts and structures behind generative AI.
     * [Prompt Anatomy](generative-ai-knowledge/prompt-anatomy.md): Understand the fundamental components of effective prompts.
+    * [Coding Prompt Anatomy](generative-ai-knowledge/coding-prompt-anatomy.md): Specifically for prompts related to code generation.
 
 * **[Prompt Storage](prompt-storage/README.md)**: A collection of various prompts for different use cases.
     * [AI Profiles](prompt-storage/ai-profiles/perplexity-profile.md): Prompts tailored for specific AI personas or platforms (e.g., Perplexity AI).

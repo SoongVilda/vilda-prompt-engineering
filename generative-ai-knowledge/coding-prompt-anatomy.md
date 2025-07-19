@@ -16,7 +16,18 @@
 ---
 
 ## Context Dump
-For context:
+
+### Project Overview:
+
+### Existing Code/Files:
+
+### Current Script (if applicable):
+
+### Pseudocode/Logic:
+
+### Required Libraries/Dependencies:
+
+### Constraints/Requirements:
 ```
 
 ## Explanation
@@ -55,17 +66,17 @@ This minimalistic template is powerful because it systematically combines severa
 > - **Relevance:** The ability of a model to adhere to a specific format is a measure of its instruction-following capability. The FLAN paper demonstrates how models are trained to become better at following all kinds of instructions, including complex formatting rules.
 
 ### Warnings
-- **Technique:** **Constraint Prompting**
-- This technique acts as a guardrail. By outlining limitations or actions the AI must avoid (e.g., "do not exceed 300 words," "avoid technical jargon"), you refine the output and prevent undesirable results, ensuring the response adheres to your specific guidelines.
+- **Technique:** **Negative / Behavioral Constraint Prompting**
+- This technique acts as a high-level guardrail. By outlining overarching limitations or actions the AI must avoid (e.g., "do not exceed 300 words," "avoid technical jargon," "do not suggest proprietary libraries"), you refine the model's behavior and prevent undesirable results. This section is for **general rules of engagement**, separate from project-specific technical requirements.
 
 > - **Source:** "Constitutional AI: Harmlessness from AI Feedback" by Yuntao Bai et al. (2022)
 > - **Link:** [View Paper](https://arxiv.org/abs/2212.08073)
 > - **Relevance:** This paper pioneers the use of explicit principles and constraints (a "constitution") to guide AI behavior, demonstrating the power of telling a model what *not* to do.
 
 ### Context Dump
-- **Technique:** **Contextual Prompting** (The foundation for **Retrieval-Augmented Generation - RAG**)
-- This is where you provide all necessary background information. This "grounds" the model in the specific data you provide, forcing it to generate answers based on that context rather than its general pre-trained knowledge. This drastically improves factual accuracy and is a cornerstone of advanced, reliable AI systems.
+- **Technique:** **Structured Context & Technical Constraint Grounding**
+- This section grounds the model in a specific reality by combining two powerful techniques. First, it applies the principle of **Retrieval-Augmented Generation (RAG)** by providing all necessary background information (`Project Overview`, `Existing Code`, etc.), forcing the AI to base its response on the data you provide, not just its general knowledge. Second, it provides **Technical Constraints** (`Required Libraries`, `Constraints/Requirements`) that are directly tied to that context. Grouping technical requirements with the context they apply to makes the prompt more logical and ensures the AI builds a solution that integrates correctly with the specified environment.
 
-> - **Source:** "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (RAG)" by Patrick Lewis et al. (2020)
+> - **Source (RAG):** "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (RAG)" by Patrick Lewis et al. (2020)
 > - **Link:** [View Paper](https://arxiv.org/abs/2005.11401)
-> - **Relevance:** This is the foundational paper that introduced the RAG framework, proving that grounding a model's generation with retrieved, factual context drastically improves accuracy and reliability.
+> - **Relevance:** This section implements the core RAG principle of grounding an LLM with retrieved data. The structured sub-sections represent a sophisticated application of this idea, presenting the information in a pre-digested format. The inclusion of technical constraints within this structure is an advanced application that ensures requirements are tightly coupled with the context they modify.
