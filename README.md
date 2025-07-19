@@ -30,9 +30,10 @@ This repository is organized to help you quickly find resources related to Large
 
 Curious how this was made? It's an example of using an LLM with Unix tools. I ran `tree` in the repo root, then pasted the output into **Gemini 2.5 Flash** with the prompt:
 
+```
 "Based on tree generate description and clickable library for my main README in GitHub to help users understand and navigate quicker. My current README contains this:
-\`\`\`md
+
 # My LLM-Based Resources: Knowledge, Prompts, and More
 
 Since OpenAI released ChatGPT on November 30, 2022, I've steadily invested time and energy into extracting powerful outputs from these large language models for both my personal and professional life. I've decided to share these valuable insights here, as I believe a community-driven effort is the most effective way to foster excellent developments in software, hardware, and even groundbreaking ideas.
-\`\`\`"
+```
