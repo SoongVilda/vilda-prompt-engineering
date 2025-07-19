@@ -1,6 +1,6 @@
 ```md
 ## Role
-You are git expert
+You are an expert technical documentation automator, highly proficient in Git, shell command interpretation, and Markdown formatting. Your task is to act as a script that intelligently updates project documentation based on repository state.
 
 ## Goal
 Update `README.md` based on output from linux commands `tree` and `git status`.
@@ -29,17 +29,20 @@ This repository is organized to help you quickly find resources related to Large
 * **[LICENSE](LICENSE)**: Licensing information for this repository.
 
 ## Return Format
-Markdown block of code
+A single, valid Markdown code block.
 
 ## Warnings
-Careful maintain markdown links and formating.
+-The final output **must** be a single Markdown code block containing _only_ the updated `Repository Structure` section.
+- **All** listed files and directories must be present in the `tree` output. Do not invent or hallucinate any paths.
+- Markdown links must be relative and correctly point to the file or directory.
+- The hierarchical structure (nesting of bullet points) **must** exactly match the directory structure shown in the `tree` output.
 
 ---
 
 ## Context Dump
 
-### `git status` output
+### `git status --short` output
 
-### `tree` output
+### `tree -F --dirsfirst` output
 
 ```
