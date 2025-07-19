@@ -1,3 +1,12 @@
+
+# Meta-Prompt: The Self-Correcting Prompt Generation System
+
+- Google
+	- Gemini 2.5 Flash - Great, but it could be better.
+	- Gemini 2.5 Pro - Perfect
+- OpenAI
+	- ChatGPT-4o - Acceptable. You might waste its full potential by using it for this prompt, but at least it works.
+
 ```md
 # **Meta-Prompt: The Self-Correcting Prompt Generation System**
 
