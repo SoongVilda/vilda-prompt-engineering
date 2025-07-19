@@ -1,10 +1,13 @@
-# My LLM-Based Resources: Knowledge, Prompts, and More
+```md
+## Role
+You are git expert
 
-Since OpenAI released ChatGPT on November 30, 2022, I've steadily invested time and energy into extracting powerful outputs from these large language models for both my personal and professional life. I've decided to share these valuable insights here, as I believe a community-driven effort is the most effective way to foster excellent developments in software, hardware, and even groundbreaking ideas.
+## Goal
+Update `README.md` based on output from linux commands `tree` and `git status`.
 
----
+## Example
 
-## Repository Structure
+### Repository Structure
 
 This repository is organized to help you quickly find resources related to Large Language Models (LLMs).
 
@@ -22,20 +25,21 @@ This repository is organized to help you quickly find resources related to Large
     * **[Text Processing](prompt-storage/text-processing)**: Prompts specifically for summarizing and processing text.
         * [Bullet Point Summary](prompt-storage/text-processing/bullet-point-summary.md): Condense text into concise bullet points.
         * [Coherent Text Summary](prompt-storage/text-processing/coherent-text-summary.md): Generate a fluent and coherent summary of a given text.
-    * [Update Prompt Github Readme](prompt-storage/update-prompt-github-readme.md): A prompt to update your GitHub README.md based on repository changes.
 
 * **[LICENSE](LICENSE)**: Licensing information for this repository.
 
+## Return Format
+Markdown block of code
+
+## Warnings
+Careful maintain markdown links and formating.
+
 ---
 
-### How This README Was Generated
+## Context Dump
 
-Curious how this was made? It's an example of using an LLM with Unix tools. I ran `tree` in the repo root, then pasted the output into **Gemini 2.5 Flash** with the prompt:
+### `git status` output
 
-```
-Based on tree generate description and clickable library for my main README in GitHub to help users understand and navigate quicker. My current README contains this:
+### `tree` output
 
-# My LLM-Based Resources: Knowledge, Prompts, and More
-
-Since OpenAI released ChatGPT on November 30, 2022, I've steadily invested time and energy into extracting powerful outputs from these large language models for both my personal and professional life. I've decided to share these valuable insights here, as I believe a community-driven effort is the most effective way to foster excellent developments in software, hardware, and even groundbreaking ideas.
 ```
