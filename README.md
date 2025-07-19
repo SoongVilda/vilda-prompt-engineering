@@ -18,7 +18,7 @@ This repository is organized to help you quickly find resources related to Large
     * [Make My English Just Perfect](prompt-storage/make-my-english-just-perfect.md): Enhance your English text for clarity and correctness.
     * [Personal Lawyer](prompt-storage/personal-lawyer.md): A prompt to simulate legal assistance or generate legal-style text.
     * [Prompt Expander](prompt-storage/prompt-expander.md): Expand short prompts into more detailed ones.
-    * [Text Processing](prompt-storage/text-processing/README.md): Prompts specifically for summarizing and processing text.
+    * **[Text Processing](prompt-storage/text-processing)**: Prompts specifically for summarizing and processing text.
         * [Bullet Point Summary](prompt-storage/text-processing/bullet-point-summary.md): Condense text into concise bullet points.
         * [Coherent Text Summary](prompt-storage/text-processing/coherent-text-summary.md): Generate a fluent and coherent summary of a given text.
 
@@ -31,7 +31,7 @@ This repository is organized to help you quickly find resources related to Large
 Curious how this was made? It's an example of using an LLM with Unix tools. I ran `tree` in the repo root, then pasted the output into **Gemini 2.5 Flash** with the prompt:
 
 ```
-"Based on tree generate description and clickable library for my main README in GitHub to help users understand and navigate quicker. My current README contains this:
+Based on tree generate description and clickable library for my main README in GitHub to help users understand and navigate quicker. My current README contains this:
 
 # My LLM-Based Resources: Knowledge, Prompts, and More
 
