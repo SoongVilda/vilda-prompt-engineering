@@ -1,8 +1,6 @@
 # The Art of Prompting: A Comprehensive Guide
 
 ```md
-# The Lean & Effective Prompt
-
 ## Role
 
 ## Goal
@@ -18,6 +16,8 @@
 ## Context Dump
 For context:
 ```
+
+> If you're using an LLM with Chain-of-Thought (CoT) capabilities, then include the following sentence at the end of your goal statement: `**To achieve this, let's think step by step.**`
 
 ## Explanation
 
