@@ -2,8 +2,6 @@
 
 Since OpenAI released ChatGPT on November 30, 2022, I've steadily invested time and energy into extracting powerful outputs from these large language models for both my personal and professional life. I've decided to share these valuable insights here, as I believe a community-driven effort is the most effective way to foster excellent developments in software, hardware, and even groundbreaking ideas.
 
----
-
 ## Repository Structure
 
 This repository is organized to help you quickly find resources related to Large Language Models (LLMs).
@@ -27,8 +25,6 @@ This repository is organized to help you quickly find resources related to Large
     * [Update Prompt Github Readme](prompt-storage/update-prompt-github-readme.md): The meta-prompt used to update this very README file.
 
 * **[LICENSE](LICENSE)**: Licensing information for this repository.
-
----
 
 ### How This README Was Generated
 
