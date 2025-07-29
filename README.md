@@ -13,6 +13,7 @@ This repository is organized to help you quickly find resources related to Large
 * **[Prompt Storage](prompt-storage/README.md)**: A collection of ready-to-use prompts for different use cases.
     * **[AI Profiles](prompt-storage/ai-profiles/)**: Prompts designed to give the AI a specific persona or expertise.
         * [Perplexity Profile](prompt-storage/ai-profiles/perplexity-profile.md): A prompt to make the AI act like Perplexity's conversational search engine.
+        * [Gemini Profile](prompt-storage/ai-profiles/gemini-factual-profile.md): This prompt configures the AI to act as a factual engine: it delivers sourced answers and functional code, avoids all opinions, and adds a disclaimer for subjective queries.
     * **[Czech-Focused](prompt-storage/czech-focused/)**: Prompts specifically for Czech language tasks.
         * [Correct Czech Text](prompt-storage/czech-focused/correct-czech-text.md): A prompt to proofread and correct Czech text.
     * **[Text Processing](prompt-storage/text-processing/)**: A suite of prompts for manipulating and summarizing text.
